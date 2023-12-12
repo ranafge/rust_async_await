@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        ".\\rust_futures_for_string\\Cargo.toml",
+        ".\\rust_futures_for_string\\Cargo.toml"
+    ]
+}

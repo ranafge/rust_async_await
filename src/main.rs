@@ -1,6 +1,6 @@
 #![allow(unused, dead_code)]
 
-
+use rust_futures_for_string::MyFuture;
 
 use std::time::Duration;
 
@@ -9,11 +9,8 @@ use futures::{join, executor::block_on, Future, future};
 
 #[tokio::main]
 async fn main() {
-  
-   let f = add(30);
-   let f2 = some_wait();
-   let f3 =  sub(30);
-   tokio::join!(f, f2, f3);
+    let result_future = MyFuture.await;
+    println!("{}", result_future);
 
 }
 

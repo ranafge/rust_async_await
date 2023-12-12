@@ -70,6 +70,7 @@ name = "firstchapter_asyncawait"
 version = "0.1.0"
 dependencies = [
  "futures",
+ "rust_futures_for_string",
  "tokio",
 ]
 
@@ -296,6 +297,10 @@ checksum = "4722d768eff46b75989dd134e5c353f0d6296e5aaa3132e776cbdb56be7731aa"
 dependencies = [
  "bitflags",
 ]
+
+[[package]]
+name = "rust_futures_for_string"
+version = "0.1.0"
 
 [[package]]
 name = "rustc-demangle"
