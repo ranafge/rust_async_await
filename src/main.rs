@@ -13,10 +13,18 @@ async fn main() {
     println!("{}", result_future);
     let resut_async_await = async_await::bar().await;
     println!("{}", resut_async_await);
+    let result_move_to_async_block = move_to_async_block().await;
+    println!("{:?}", result_move_to_async_block);
 
 
 }
 
+fn move_to_async_block () -> impl Future<Output=String> {
+    let name = "Rana".to_string();
+    async move {
+        format!("Hello {}", name)
+    }
+}
 
 async fn add(x:i32) -> i32{
     println!("x + 1");
