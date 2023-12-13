@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 tokio = {version = "*", features = ["full"]} 
 futures = {version = "*"}
+async_await ={ path = "async_await"}
 rust_futures_for_string ={ path = "rust_futures_for_string"}

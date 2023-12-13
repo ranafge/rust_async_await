@@ -1,8 +1,8 @@
 #![allow(unused, dead_code)]
-
+use tokio::time::Duration;
 use rust_futures_for_string::MyFuture;
+use async_await;
 
-use std::time::Duration;
 
 use futures::{join, executor::block_on, Future, future};
 // async keyward can be used to define asynchronous tasks or coroutines
@@ -11,6 +11,9 @@ use futures::{join, executor::block_on, Future, future};
 async fn main() {
     let result_future = MyFuture.await;
     println!("{}", result_future);
+    let resut_async_await = async_await::bar().await;
+    println!("{}", resut_async_await);
+
 
 }
 
